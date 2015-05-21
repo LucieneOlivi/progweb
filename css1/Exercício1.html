@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Página Instituto de Computação -->
+
+<html>
+
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Instituto de Computação</title>
+	</head>
+	
+	<body>
+	<h1>Este é um grande cabeçalho</h1>
+	</br>
+	<h2>E este é um pequeno cabeçalho</h2>
+	</br>
+	<p>Aqui eu coloquei um parágrafo com texto aleatório, e a seguir </br>
+		vou inserir um formulário dentro de uma tabela. Além disso, aqui vai </br>
+		um link: <a href = "http://icomp.ufam.edu.br/david" >Instituto de Computação </a></p>
+		
+	<div id="contact-form">
+	
+	<form id="contact" method="GET" action="processa.php">
+	<table>
+	<tr>
+	<td>Seu nome </td> 
+	<td><input type="text" name="nome" id="nome" > </td>
+	</tr>
+	
+	<tr><td>Seu sexo</td>
+	<td><select name="area" id="area">
+	<option value="1">Masculino</option>
+	<option value="2">Femenino</option>
+	</select></td></tr>
+	
+	<tr>
+	<td style = "vertical-align: top">Seus comentários</td>
+	<td><textarea name="mensagem" rows="10" cols="50" > </textarea></td>
+	</tr>
+	
+	<tr>
+	<td></td>
+	<td><input type="submit" name="submit" id="submit" value="Enviar" /></td>
+	</tr>
+	
+	</table>
+	</form>
+	</div>
+	</body>
+</html>
