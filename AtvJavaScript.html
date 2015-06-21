@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Trabalho de Programação Web
+Prof.: David Fernandes
+Aluna: Luciene Oliveira da Silva. Mat.: 20902150 
+-->
+
+<html>
+	<head>
+		
+			<meta charset="UTF-8">
+			<title>Apenas um teste</title>
+
+		
+	</head>
+		<body>
+			<h1 style="position: absolute; right: 970px; ">Friedrich Nietzsche</h1>
+						
+			<span> 
+			<img src="imagem.jpeg">
+			</span>
+			
+			<p> <font size="5"> Eu jamais iria para a fogueira por uma opinião minha, afinal,<br>
+			não tenho certeza alguma. Porém, eu iria pelo direito de ter<br>
+			e mudar de opinião, quantas vezes eu quisesse.</font> <br /> </p>
+			
+			<table border=0>
+				<td>
+					<div id = 'contador'font > 
+					0 people like this
+					</div>
+				</td>
+
+				<td> 
+				<form name = 'contador' >
+					<input type = 'button' name = 'like' value = 'Like' style="width: 70px; height: 30px">  
+				</form>
+				</td>
+			</table>
+            
+			<p> <font size="5"> Comentários </p>
+            
+            <div name='comentario' id = 'comentario'>
+               <!--vazio -->
+            </div>
+             </br>
+			 
+			<table>
+				<td>
+				<textarea name = 'area' id = 'area'></textarea>
+				</td>
+				<td>
+				<form name = 'coment' >
+				<input type = 'button' name = 'bcomentario' value = 'comentar' style="width: 70px; height: 30px" > 
+				</form>
+				</td>
+			</table>
+            <script>
+                var cont = 1;
+                document.contador.like.onclick = function like(){
+                        document.getElementById ('contador').innerHTML = cont + " people like this";
+                        cont = cont +1;
+               }
+                document.coment.bcomentario.onclick = function comentario(){
+                        var elemento_pai = document.getElementById("comentario");
+                        var titulo = document.createElement('div');
+                        titulo.setAttribute( "style", "display:block; height:50px; background-color:#ACB7BD; margin-bottom:10px;" );
+                        var texto = document.createTextNode(document.getElementById("area").value);
+                        titulo.appendChild(texto);
+                        elemento_pai.appendChild(titulo);
+                }
+            </script>
+		</body>
+</html>
