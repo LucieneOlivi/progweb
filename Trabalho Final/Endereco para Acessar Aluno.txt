@@ -1,0 +1,1 @@
+http://127.0.0.1/yii2-app-basic/web/index.php?r=aluno%2Findex
