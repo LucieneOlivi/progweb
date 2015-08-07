@@ -36,8 +36,10 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => 'Alunos', 'url' => ['/site/about']],
-                    ['label' => 'Curso', 'url' => ['/site/contact']],
+                    ['label' => 'Alunos', 'url' => ['/aluno/index']],
+                    ['label' => 'Cursos', 'url' => ['/curso/index']],
+                    ['label' => 'About', 'url' => ['/site/about']],
+                    ['label' => 'Contact', 'url' => ['/site/contact']],					
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
